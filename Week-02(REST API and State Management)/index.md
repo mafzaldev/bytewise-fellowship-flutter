@@ -32,9 +32,9 @@ I learnt how to convert JSON data to Dart models using the different methods lik
 
 ---
 
-### GET response handling in Flutter
+### GET request handling in Flutter
 
-I learnt how to handle REST API GET requests in Flutter, like:
+I learnt how to handle GET requests in Flutter, like:
 
 - building List with JSON Data using FutureBuilder
 - building List with JSON Data using FutureBuilder with custom model
@@ -42,5 +42,11 @@ I learnt how to handle REST API GET requests in Flutter, like:
 - building List with even Complex JSON Data (Images, Conditional Rendering) using FutureBuilder
 
 Furthermore, I learnt how to host your custom GET API endpoint on [https://webhook.site/](https://webhook.site//)
+
+---
+
+### POST request handling in Flutter
+
+I learnt how to handle POST requests in Flutter, like creating a form to perform a fake signup and login functionality using POST request with JSON data`
 
 ---
