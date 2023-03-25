@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:covid_tracker/views/world_stats_screen.dart';
+import 'package:covid_tracker/Views/world_stats_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

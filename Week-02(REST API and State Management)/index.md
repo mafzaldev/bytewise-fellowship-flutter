@@ -53,7 +53,12 @@ I learnt how to handle POST requests in Flutter, like creating a form to perform
 
 ### COVID-19 Tracker App
 
-I learnt how to build a COVID-19 Tracker App using a REST API and flutter, with different features. I designed 4 different screens for the app, as follows:
+I learnt how to build a COVID-19 Tracker App using a REST API and flutter, with different features. I used disease.sh API with the following endpoints:
+
+- [World Stats](https://disease.sh/v3/covid-19/all)
+- [Countries List](https://disease.sh/v3/covid-19/countries)
+
+I designed 4 different screens for the app, as follows:
 
 - Splash Screen
 - World Stats Screen
