@@ -17,7 +17,7 @@ class _SignUpState extends State<SignUp> {
   void login(String email, String password) async {
     try {
       Response response = await post(
-        Uri.parse("https://reqres.in/api/login"),
+        Uri.parse("https://reqres.in/api/register"),
         body: {
           "email": email,
           "password": password,

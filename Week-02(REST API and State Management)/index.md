@@ -47,6 +47,23 @@ Furthermore, I learnt how to host your custom GET API endpoint on [https://webho
 
 ### POST request handling in Flutter
 
-I learnt how to handle POST requests in Flutter, like creating a form to perform a fake signup and login functionality using POST request with JSON data`
+I learnt how to handle POST requests in Flutter, like creating a form to perform a fake signup and login functionality using POST request with JSON data
 
 ---
+
+### COVID-19 Tracker App
+
+I learnt how to build a COVID-19 Tracker App using a REST API and flutter, with different features. I designed 4 different screens for the app, as follows:
+
+- Splash Screen
+- World Stats Screen
+- Countries List Screen
+- Country Details Screen
+
+I used different packages to display the data in the app, like:
+
+- [http](https://pub.dev/packages/http)
+- [animated_text_kit](https://pub.dev/packages/animated_text_kit)
+- [pie_chart](https://pub.dev/packages/pie_chart)
+- [flutter_spinkit](https://pub.dev/packages/flutter_spinkit)
+- [shimmer](https://pub.dev/packages/shimmer)
