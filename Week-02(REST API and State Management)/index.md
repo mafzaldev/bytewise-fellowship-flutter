@@ -45,9 +45,9 @@ Furthermore, I learnt how to host your custom GET API endpoint on [https://webho
 
 ---
 
-### POST request handling in Flutter
+### Fake Authentication App
 
-I learnt how to handle POST requests in Flutter, like creating a form to perform a fake signup and login functionality using POST request with JSON data
+I learnt how to handle POST requests in Flutter, like creating an app, where user can use text field to enter username and password to perform a fake signup and login activity using POST request with JSON data
 
 ---
 
@@ -58,13 +58,6 @@ I learnt how to build a COVID-19 Tracker App using a REST API and flutter, with 
 - [World Stats](https://disease.sh/v3/covid-19/all)
 - [Countries List](https://disease.sh/v3/covid-19/countries)
 
-I designed 4 different screens for the app, as follows:
-
-- Splash Screen
-- World Stats Screen
-- Countries List Screen
-- Country Details Screen
-
 I used different packages to display the data in the app, like:
 
 - [http](https://pub.dev/packages/http)
@@ -72,3 +65,10 @@ I used different packages to display the data in the app, like:
 - [pie_chart](https://pub.dev/packages/pie_chart)
 - [flutter_spinkit](https://pub.dev/packages/flutter_spinkit)
 - [shimmer](https://pub.dev/packages/shimmer)
+
+I designed 4 different screens for the app, as follows:
+
+- Splash Screen: The app starts with a splash screen, where the app logo is displayed with a rotating animation.
+- World Stats Screen: The app displays the world stats in a card, where the user can see the total cases, recovered cases, and deaths around the world.
+- Countries List Screen: The app displays a list of all the countries, where the user can see the total cases, recovered cases, and deaths in each country. The user can also search for a specific country. The user can tap on a country to see the country details This screen shows a shimmer effect while the country data is loading.
+- Country Details Screen: The app displays the country details in a card, where the user can see the total cases, recovered cases, and deaths in the country. The user can also see the country flag and country name.
