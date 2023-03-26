@@ -78,4 +78,15 @@ Due to any state change in the application, the UI needs to be updated. If we do
 
 ### Provider
 
-Provider is a state management technique, which is used to manage the state of the application. It is a wrapper around InheritedWidget, which is used to pass data to the widgets in the widget tree. It is a very easy to get started with and is the most popular state management technique.
+Provider is a state management technique, which is used to manage the state of the application. In this section, I learnt how we can use Provider to manage the state of the application, without causing any performance issues, due to unnecessary rebuilds.
+Provider has three main components:
+
+- **Provider**: The main component of the Provider package, which is used to provide the state to the application.
+- **ChangeNotifier**: The ChangeNotifier class is used to notify the listeners about the state change.
+- **Consumer**: The Consumer widget is used to consume the state provided by the Provider.
+
+I implemented different examples to understand the Provider concepts, like:
+
+- **Counter Example**: I implemented a simple counter example, where I used the Provider to manage the state of the counter.
+
+- **Slider Example**: I implemented a simple slider example, where I used the Provider to manage the state of the slider. I used multiple providers in the same widget tree, therefore used the MultiProvider widget.
