@@ -43,7 +43,7 @@ I learnt how to handle POST requests in Flutter, like creating an app, where use
 
 ### COVID-19 Tracker App
 
-I learnt how to build a COVID-19 Tracker App using a REST API and flutter, with different features. I used **disease.sh** API with the following endpoints:
+I learnt how to build a COVID-19 Tracker App using a REST API and flutter, with different features. I used `disease.sh` API with the following endpoints:
 
 - [World Stats](https://disease.sh/v3/covid-19/all)
 - [Countries List](https://disease.sh/v3/covid-19/countries)
@@ -58,10 +58,10 @@ I used different packages to display the data in the app, like:
 
 I designed 4 different screens for the app, as follows:
 
-- **Splash Screen**: The app starts with a splash screen, where the app logo is displayed with a rotating animation.
-- **World Stats Screen**: The app displays the world stats in a card, where the user can see the total cases, recovered cases, and deaths around the world.
-- **Countries List Screen**: The app displays a list of all the countries, where the user can see the total cases, recovered cases, and deaths in each country. The user can also search for a specific country. The user can tap on a country to see the country details This screen shows a shimmer effect while the country data is loading.
-- **Country Details Screen**: The app displays the country details in a card, where the user can see the total cases, recovered cases, and deaths in the country. The user can also see the country flag and country name.
+- `Splash Screen`: The app starts with a splash screen, where the app logo is displayed with a rotating animation.
+- `World Stats Screen`: The app displays the world stats in a card, where the user can see the total cases, recovered cases, and deaths around the world.
+- `Countries List Screen`: The app displays a list of all the countries, where the user can see the total cases, recovered cases, and deaths in each country. The user can also search for a specific country. The user can tap on a country to see the country details This screen shows a shimmer effect while the country data is loading.
+- `Country Details Screen`: The app displays the country details in a card, where the user can see the total cases, recovered cases, and deaths in the country. The user can also see the country flag and country name.
 
 ---
 
@@ -69,24 +69,30 @@ I designed 4 different screens for the app, as follows:
 
 In this section, firstly I revisited the state management concepts, like:
 
-- **Stateless Widgets**: Widgets that don't have any state, these are immutable. These widgets are used to display the UI.
-- **Stateful Widgets**: Widgets that have state, these are mutable. These widgets are used to manage the state of the application.
+- `Stateless Widgets`: Widgets that don't have any state, these are immutable. These widgets are used to display the UI.
+- `Stateful Widgets`: Widgets that have state, these are mutable. These widgets are used to manage the state of the application.
 
 ### Why do we need state management?
 
-Due to any state change in the application, the UI needs to be updated. If we don't use any state management, then we need to rebuild the entire Widget tree, which is not a good practice and can cause inefficiency. So, we need to use state management to manage the state of the application. Among all the state management techniques, **Provider** is the easy to get started with and is the most popular state management technique.
+Due to any state change in the application, the UI needs to be updated. If we don't use any state management, then we need to rebuild the entire Widget tree, which is not a good practice and can cause inefficiency. So, we need to use state management to manage the state of the application. Among all the state management techniques, `Provider` is the easy to get started with and is the most popular state management technique.
 
 ### Provider
 
 Provider is a state management technique, which is used to manage the state of the application. In this section, I learnt how we can use Provider to manage the state of the application, without causing any performance issues, due to unnecessary rebuilds.
 Provider has three main components:
 
-- **Provider**: The main component of the Provider package, which is used to provide the state to the application.
-- **ChangeNotifier**: The ChangeNotifier class is used to notify the listeners about the state change.
-- **Consumer**: The Consumer widget is used to consume the state provided by the Provider.
+- `Provider`: The main component of the Provider package, which is used to provide the state to the application.
+- `ChangeNotifier`: The ChangeNotifier class is used to notify the listeners about the state change.
+- `Consumer`: The Consumer widget is used to consume the state provided by the Provider.
 
 I implemented different examples to understand the Provider concepts, like:
 
-- **Counter Example**: I implemented a simple counter example, where I used the Provider to manage the state of the counter.
+- `Counter Example`: I implemented a simple counter example, where I used the Provider to manage the state of the counter.
 
-- **Slider Example**: I implemented a simple slider example, where I used the Provider to manage the state of the slider. I used multiple providers in the same widget tree, therefore used the MultiProvider widget.
+- `Slider Example`: I implemented a simple slider example, where I used the Provider to manage the state of the slider. I used multiple providers in the same widget tree, therefore used the MultiProvider widget.
+
+- `Favourites Example`: I implemented a simple favourites example, where user can tap on the heart icon to make it favourte or unfavourite. I used the Provider to manage the state of the favourites. I used the ChangeNotifierProvider widget to provide the state to the application.
+
+- `Light/Dark mode Example`: I implemented a simple light/dark mode example, where user is provided with three Radio Buttons to change the theme(Light/Dark/System) of the app. I used the Provider to manage the state of the theme. I used the ChangeNotifierProvider widget to provide the state to the application.
+
+- `REST API Example`: I implemented a simple REST API example, where I used the Provider to manage the login request to the REST API. I used the ChangeNotifierProvider widget to provide the state to the application.
