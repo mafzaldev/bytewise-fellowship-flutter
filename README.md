@@ -8,6 +8,6 @@ The Flutter Fellowship at ByteWise is a comprehensive program designed to provid
 
 ### Contents
 
-1. [Week 1](./Week-01/)
-2. [Week 2](./Week-02/)
-3. [Week 3](./Week-03/)
+1. [Onboarding](./Week-01/)
+2. [REST API and State Management](./Week-02/)
+3. [Firebase](./Week-03/)
