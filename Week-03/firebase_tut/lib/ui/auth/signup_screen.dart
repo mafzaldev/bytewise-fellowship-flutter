@@ -1,6 +1,6 @@
-import 'dart:developer';
-
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_tut/ui/auth/login_screen.dart';
+import 'package:firebase_tut/utils/utils.dart';
 import 'package:firebase_tut/widgets/rounded_button.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +15,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
   final _formKey = GlobalKey<FormState>();
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  FirebaseAuth auth = FirebaseAuth.instance;
+  bool isLoading = false;
 
   @override
   void dispose() {
@@ -88,9 +90,29 @@ class _SignUpScreenState extends State<SignUpScreen> {
             const SizedBox(height: 25),
             RoundedButton(
               title: "Signup",
+              isLoading: isLoading,
               onTap: () {
                 if (_formKey.currentState!.validate()) {
-                  log('Login');
+                  setState(() {
+                    isLoading = true;
+                  });
+                  auth
+                      .createUserWithEmailAndPassword(
+                          email: emailController.text.toString(),
+                          password: passwordController.text.toString())
+                      .then((value) {
+                    Utils().showSnackBar(context, Colors.black,
+                        '${value.user!.email} registered successfully');
+                    setState(() {
+                      isLoading = false;
+                    });
+                  }).onError((error, stackTrace) {
+                    Utils().showSnackBar(context, Colors.red, error.toString());
+
+                    setState(() {
+                      isLoading = false;
+                    });
+                  });
                 }
               },
             ),

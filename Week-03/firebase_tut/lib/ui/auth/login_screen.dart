@@ -1,6 +1,7 @@
-import 'dart:developer';
-
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_tut/ui/auth/signup_screen.dart';
+import 'package:firebase_tut/ui/posts/posts_screen.dart';
+import 'package:firebase_tut/utils/utils.dart';
 import 'package:firebase_tut/widgets/rounded_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -16,6 +17,8 @@ class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  FirebaseAuth auth = FirebaseAuth.instance;
+  bool isLoading = false;
 
   @override
   void dispose() {
@@ -95,9 +98,34 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(height: 25),
               RoundedButton(
                 title: "Login",
+                isLoading: isLoading,
                 onTap: () {
                   if (_formKey.currentState!.validate()) {
-                    log('Login');
+                    setState(() {
+                      isLoading = true;
+                    });
+                    auth
+                        .signInWithEmailAndPassword(
+                            email: emailController.text.toString(),
+                            password: passwordController.text.toString())
+                        .then((value) {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const PostsScreen()));
+                      setState(() {
+                        isLoading = false;
+                      });
+                    }).catchError((error, stackTrace) {
+                      setState(() {
+                        isLoading = false;
+                      });
+                      Utils().showSnackBar(
+                        context,
+                        Colors.red,
+                        error.toString(),
+                      );
+                    });
                   }
                 },
               ),
