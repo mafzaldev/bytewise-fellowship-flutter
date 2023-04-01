@@ -46,3 +46,7 @@ I learnt how to perform CRUD operations on Firestore. I learnt how to fetch list
 ## Firebase Storage
 
 I learnt how to upload images to Firebase Storage. I added a new screen, where user can pick an image from the local storage and upload it to the Firebase storage, and URL of the image from Firebase Storage is further stored in Realtime Database.
+
+|  Splash Screen  |  Login Screen  |
+| :-------------: | :------------: |
+| ![](splash.jpg) | ![](login.jpg) |
