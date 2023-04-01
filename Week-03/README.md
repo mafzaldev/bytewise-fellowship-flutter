@@ -20,6 +20,10 @@ I extended the example to use phone number authentication. I designed two screen
 
 - `VerifyCodeScreen` - This screen is shown to the user, after the user clicks on the `Login` button on `PhoneLoginScreen`. It has a text field for inserting 6 digits verification code. It also has a button to verify the code. After clicking on the button, it verifies the code, and if the code is correct, it logs the user in.
 
+### Reset Password
+
+I extended the example to use reset password. I added a new screen `ForgotPasswordScreen`, where user can enter their email address, and a reset password link is sent to the email address.
+
 ## Firebase Database
 
 Firebase Database is a cloud-hosted database. Data is stored as JSON and synchronized in realtime to every connected client. It is a NoSQL database. It is a good choice for mobile apps that require a realtime database.

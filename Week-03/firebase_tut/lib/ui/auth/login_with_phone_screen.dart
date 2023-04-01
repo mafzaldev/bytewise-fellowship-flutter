@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_tut/ui/auth/verify_code.dart';
+import 'package:firebase_tut/ui/auth/verify_code_screen.dart';
 import 'package:firebase_tut/utils/utils.dart';
 import 'package:firebase_tut/widgets/rounded_button.dart';
 import 'package:flutter/material.dart';
