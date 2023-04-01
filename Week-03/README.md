@@ -38,3 +38,7 @@ Firebase Firestore is a flexible, scalable database for mobile, web, and server 
 ### CRUD Operations
 
 I learnt how to perform CRUD operations on Firestore. I learnt how to fetch list of posts from a collection, using StreamBuilder. I also learnt how to search for a post in the rendered list. I replaced the Realtime Database with Firestore in the previous example.
+
+## Firebase Storage
+
+I learnt how to upload images to Firebase Storage. I added a new screen, where user can pick an image from the local storage and upload it to the Firebase storage, and URL of the image from Firebase Storage is further stored in Realtime Database.
