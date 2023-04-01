@@ -27,7 +27,14 @@ Firebase Database is a cloud-hosted database. Data is stored as JSON and synchro
 ### CRUD Operations
 
 - `Create`: I added an Floating Action Buttton in `PostsScreen`, whih navigates me to a new screen `AddPostScreen`, where I can create a new post. This screen has a Text field to add post text, and a button to create the post in Realtime Database.
-
 - `Read`: I learnt how to fetch list of posts from a collection, using FirebaseAnimatedList and StreamBuilder. I also learnt how to search for a post in the rendered list.
 - `Update`: I added a popup menu button in each post, which has an option to edit the post. This option navigates pops up a dialog, where I can edit the post text. This popup has a Text field to edit post text, and a button to update the post in Realtime Database.
 - `Delete`: I added a popup menu button in each post, which has an option to delete the post.
+
+## Firebase Firestore
+
+Firebase Firestore is a flexible, scalable database for mobile, web, and server development from Firebase and Google Cloud Platform. Like Firebase Realtime Database, it is also a cloud-hosted database. It stores data in documents, which are organized into collections. It is a NoSQL database. It is a good choice for mobile apps that require a realtime database.
+
+### CRUD Operations
+
+I learnt how to perform CRUD operations on Firestore. I learnt how to fetch list of posts from a collection, using StreamBuilder. I also learnt how to search for a post in the rendered list. I replaced the Realtime Database with Firestore in the previous example.
