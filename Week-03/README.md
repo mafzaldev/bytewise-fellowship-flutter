@@ -7,7 +7,28 @@ In this week, I learnt, how to work with Firebase in Flutter. I learnt how to us
 Firebase Authentication is a service that provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to your app. It supports authentication using passwords, phone numbers, popular federated identity providers like Google, Facebook and Twitter, and more.
 In this example, I used email and password authentication. I designed four screens for this example:
 
-- `SplashScreen` - This screen is shown when the app is launched. It checks if the user is logged in or not. If the user is logged in, it navigates to the `PostsScreen`. If the user is not logged in, it navigates to the `LoginScreen`.
-- `LoginScreen` - This screen is shown when the user is not logged in. It has two text fields for email and password. It also has a button to login. If the user is not registered, it navigates to the `SignUpScreen`.
-- `SignUpScreen` - This screen is shown when the user is not registered. It has two text fields for email and password. It also has a button to sign up. If the user is already registered, it navigates to the `LoginScreen`.
+- `SplashScreen` - This screen is shown when the app is launched. It checks if the user is logged in or not. If the user is logged in, it navigates to the PostsScreen. If the user is not logged in, it navigates to the LoginScreen.
+- `LoginScreen` - This screen is shown when the user is not logged in. It has two text fields for email and password. It also has a button to login. If the user is not registered, it navigates to the SignUpScreen.
+- `SignUpScreen` - This screen is shown when the user is not registered. It has two text fields for email and password. It also has a button to sign up. If the user is already registered, it navigates to the LoginScreen.
 - `PostsScreen` - This screen is shown when the user is logged in. It has a button to sign out.
+
+### Phone Number Authentication
+
+I extended the example to use phone number authentication. I designed two screens for this example:
+
+- `PhoneLoginScreen` - This screen is shown when the user wants clicks on `Login with phone` button added on login screen. It has a text field for phone number. It also has a button to login. After clicking on the button, it sends a verification code to the phone number, and user is redirected to the `VerifyCodeScreen`.
+
+- `VerifyCodeScreen` - This screen is shown to the user, after the user clicks on the `Login` button on `PhoneLoginScreen`. It has a text field for inserting 6 digits verification code. It also has a button to verify the code. After clicking on the button, it verifies the code, and if the code is correct, it logs the user in.
+
+## Firebase Database
+
+Firebase Database is a cloud-hosted database. Data is stored as JSON and synchronized in realtime to every connected client. It is a NoSQL database. It is a good choice for mobile apps that require a realtime database.
+
+### CRUD Operations
+
+I learnt how to perform CRUD operations on Firebase Database.
+
+- Create - I learnt how to create a new post in a collection.
+- Read - I learnt how to fetch list of posts from a collection, using FirebaseAnimatedList and StreamBuilder.
+- Update - I learnt how to update a post in a collection.
+- Delete - I learnt how to delete a post from a collection.
