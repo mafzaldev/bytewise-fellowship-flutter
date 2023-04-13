@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_tut/ui/auth/forgot_password_screen.dart';
 import 'package:firebase_tut/ui/auth/login_with_phone_screen.dart';
 import 'package:firebase_tut/ui/auth/signup_screen.dart';
-import 'package:firebase_tut/ui/posts/posts_screen.dart';
+import 'package:firebase_tut/ui/upload_image.dart';
 import 'package:firebase_tut/utils/utils.dart';
 import 'package:firebase_tut/widgets/rounded_button.dart';
 import 'package:flutter/material.dart';
@@ -114,7 +114,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const PostsScreen()));
+                              builder: (context) => const UploadImageScreen()));
                       setState(() {
                         isLoading = false;
                       });
