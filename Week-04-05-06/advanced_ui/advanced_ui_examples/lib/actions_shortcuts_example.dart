@@ -71,6 +71,11 @@ class _CopyableTextFieldState extends State<CopyableTextField> {
                   onPressed: Actions.handler<SelectAllIntent>(
                       context, const SelectAllIntent()),
                 ),
+                IconButton(
+                  icon: const Icon(Icons.clear),
+                  onPressed: Actions.handler<ClearIntent>(
+                      context, const ClearIntent()),
+                ),
                 const Spacer(),
               ],
             ),
