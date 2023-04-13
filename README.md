@@ -12,7 +12,7 @@ The Flutter Fellowship at ByteWise is a comprehensive program designed to provid
 2. [REST API and State Management](./Week-02/)
 3. [Firebase](./Week-03/)
 4. [Animations](./Week-04-05-06/animations.md)
-5. [Advanced UI](./Week-04-05-06/advanced_ui.md)
+5. [Advanced UI](./Week-04-05-06/advanced_ui/README.md)
 6. [Platform Integration](./Week-04-05-06/platform_integration.md)
 7. [Performance](./Week-04-05-06/performance.md)
 8. [Introduction to widgets](./Week-04-05-06/introduction_to_widgets.md)
