@@ -139,7 +139,7 @@ The complete example for `Actions and Shortcuts` is prvovided [here](./advanced_
 
 ## Fonts and typography
 
-`Typography` refers to the design and presentation of `fonts`, including their weight, slant, and letter spacing. Different fonts have different styles and appearances. While there is a lot to know about fonts, this page focuses on Flutter's support for both variable and static fonts.
+`Typography` refers to the design and presentation of fonts, including their weight, slant, and letter spacing. Different fonts have different styles and appearances. While there is a lot to know about fonts, this page focuses on Flutter's support for both variable and static fonts.
 
 ### Variable fonts
 
@@ -224,3 +224,38 @@ The `FocusTraversalPolicy` is responsible for determining which widget is next i
 ### Focus Manager
 
 The `FocusManager` keeps the system's current principal focus. It just contains a few API elements that are valuable to focus system users. The `FocusManager.instance.primaryFocus` property, which stores the currently focused focus node and is also accessible via the global primaryFocus field, is one example.
+
+## Gesture system
+
+In Flutter, the `gesture system` operates through two distinct layers:
+
+- The first layer is responsible for handling the raw pointer events that record the location and movement of pointers on the screen.
+- The second layer handles gestures, which are semantic actions that consist of one or more pointer movements.
+
+### Pointer
+
+Pointers provide fundamental data about the user's interactions with a device's screen, and there are four types of pointer events: PointerDownEvent, PointerMoveEvent, PointerUpEvent, and PointerCancelEvent. When a pointer is pressed down on the screen, the Flutter framework performs a hit test to determine which widget is present at that location. The pointer down event (and subsequent events for that pointer) are then sent to the innermost widget found by the hit test. The events then propagate up the widget tree and are delivered to all widgets on the path from the innermost widget to the root. There is no mechanism to halt or cancel the dispatching of pointer events.
+
+### Gestures
+
+Gestures are semantic actions that consist of one or more pointer movements. The gesture system is responsible for recognizing gestures, such as taps, drags, and swipes, and converting them into high-level events. The gesture system is also responsible for dispatching pointer events to the appropriate gesture detectors.
+
+### Gesture detectors
+
+Gesture detectors are widgets that recognize gestures. If a gesture is recognized, the gesture detector invokes a callback. Most gesture detectors can be configured to recognize one or more types of gestures. For example, a `TapGestureRecognizer` can be configured to recognize taps, double taps, and long presses. The following gesture detectors are available:
+
+- GestureDetector: Detects gestures that correspond to its non-null callbacks. It is the most commonly used gesture detector.
+
+- InkWell: Detects taps and taps that result in long presses. It is a rectangular widget that generates a ripple effect when tapped. It is commonly used in lists and other widgets that require user interaction.
+
+### Gesture disambiguation
+
+When multiple gesture detectors are active at the same time, the gesture system must disambiguate between them. The gesture system uses the following rules to determine which gesture detector receives a pointer event:
+
+- If the event is a pointer down event, the system delivers the event to the front-most detector, as determined by the widget tree.
+
+- If the event is a pointer move event, the system delivers the event to the detector that owns the pointer.
+
+- If the event is a pointer up event, the system delivers the event to the detector that owns the pointer.
+
+- If the event is a pointer cancel event, the system delivers the event to the detector that owns the pointer.
