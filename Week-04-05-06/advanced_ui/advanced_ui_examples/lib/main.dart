@@ -1,5 +1,6 @@
+import 'package:advanced_ui_examples/focus_traversal_widget_example.dart';
+import 'package:advanced_ui_examples/focus_widget_example.dart';
 import 'package:flutter/material.dart';
-import 'package:advanced_ui_examples/actions_shortcuts_example.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,11 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: const Text('Advanced UI Examples')),
-        body: const ActionShortcutsExample(),
+        body: const OrderedButtonRow(),
+        // body: Column(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   children: const <Widget>[MyCustomWidget(), MyCustomWidget()],
+        // ),
       ),
     );
   }
