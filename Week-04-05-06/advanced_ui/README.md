@@ -259,3 +259,19 @@ When multiple gesture detectors are active at the same time, the gesture system 
 - If the event is a pointer up event, the system delivers the event to the detector that owns the pointer.
 
 - If the event is a pointer cancel event, the system delivers the event to the detector that owns the pointer.
+
+## Slivers
+
+Slivers are a more advanced form of scrollable widgets. They are designed to be used in a CustomScrollView, which allows them to be combined with other scrollable widgets. Slivers are useful when you have a large number of children that you want to display in a list. Slivers are more efficient than regular list views because they only build the children that are visible on the screen. Slivers are also more flexible than regular list views because they can be combined with other widgets.
+
+### SliverList
+
+The `SliverList` widget is a sliver that places multiple box children in a linear array. The `SliverList` constructor takes a `SliverChildListDelegate`, which is similar to a `ListView`'s `children` property. The `SliverChildListDelegate` takes a `List<Widget>`, which is a list of the children that will be displayed. The `SliverList` widget is more efficient than a `ListView` because it only builds the children that are visible on the screen.
+
+### SliverGrid
+
+The `SliverGrid` widget is a sliver that places multiple box children in a two-dimensional array. The `SliverGrid` constructor takes a `SliverChildDelegate`, which is similar to a `GridView`'s `children` property. The `SliverChildDelegate` takes a `List<Widget>`, which is a list of the children that will be displayed. The `SliverGrid` widget is more efficient than a `GridView` because it only builds the children that are visible on the screen.
+
+### SliverAppBar
+
+The `SliverAppBar` widget is a sliver that displays a collapsible app bar. The `SliverAppBar` widget is typically used in a `CustomScrollView` widget. The `SliverAppBar` widget is more efficient than a `AppBar` widget because it only builds the children that are visible on the screen.
