@@ -136,3 +136,15 @@ Widget build(BuildContext context) {
 ```
 
 The complete example for `Actions and Shortcuts` is prvovided [here](./advanced_ui_examples/lib/actions_shortcuts_example.dart).
+
+## Fonts and typography
+
+Typography refers to the design and presentation of fonts, including their weight, slant, and letter spacing. Different fonts have different styles and appearances. While there is a lot to know about fonts, this page focuses on Flutter's support for both variable and static fonts.
+
+### Variable fonts
+
+Variable fonts are a new kind of font technology that allows for a single font file to contain a range of variations within a typeface, such as weight, width, and slant. This enables a wide range of typographic styles to be achieved from a single font file, rather than requiring multiple files for different variations. Flutter has built-in support for variable fonts, allowing developers to take advantage of this technology in their apps.
+
+### Static fonts
+
+Static fonts are limited to a fixed set of styles and weights, so if you need a variation of a font that's not available, you would have to create a new font file or use a different font altogether. In contrast, variable fonts allow you to define a range of styles and weights within a single font file, which can be adjusted dynamically using a small set of parameters. This provides greater flexibility and allows for more efficient use of storage space.
