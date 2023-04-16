@@ -1,5 +1,7 @@
 # Advanced UI
 
+A flutter app with advanced UI examples are shown [here](./advanced_ui_examples).
+
 ## Actions and Shortcuts
 
 `Actions` are necessary for GUI applications to execute user requests. However, in larger applications, the code for invoking the action and the code for the action itself may be in different places, and shortcuts may need to be defined at a high level. Flutter's actions and shortcuts system addresses this by allowing developers to define actions that fulfill intents bound to them. An `Intent` is a general action that the user wants to perform, and it can be fulfilled by different actions in different contexts. `Shortcuts` are key bindings that activate by pressing a key or combination of keys, and they are associated with an intent. When activated, shortcuts send their matching intent to the actions subsystem for fulfillment. This article demonstrates how to use actions and shortcuts to allow users to select and copy text in a text field using buttons and shortcuts.
