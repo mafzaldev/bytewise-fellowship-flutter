@@ -6,11 +6,11 @@ In Flutter, the canvas is flipped horizontally, so the origin is in the top left
 
 ## AnimationController
 
-The AnimationController is a special Animation object that generates a new value whenever the hardware is ready for a new frame. By default, an AnimationController linearly produces the numbers from 0.0 to 1.0 during a given duration.
+The `AnimationController` is a special Animation object that generates a new value whenever the hardware is ready for a new frame. By default, an AnimationController linearly produces the numbers from 0.0 to 1.0 during a given duration.
 
 ## Animation
 
-Unlike `AnimationController`, which can generate a new value whenever the hardware is ready for a new frame, `Animation` is a value that can change over time, but the value does not need to be generated on every frame. For example, an `Animation` could represent a value that smoothly changes over time, such as a slider moving from 0.0 to 100.0. An `Animation` could also represent a value that jumps from one value to another, such as a slider that snaps from 0.0 to 100.0. The `Animation` object knows nothing about rendering or `build()` functions: instead, it just returns a new value whenever the client asks for it, and the client decides what to do with that value. But the `Animation` object is tied to the `AnimationController`, and it changes its value based on the `AnimationController` value.
+Unlike `AnimationController`, which can generate a new value whenever the hardware is ready for a new frame, `Animation` is a value that can change over time, but the value does not need to be generated on every frame. For example, an Animation could represent a value that smoothly changes over time, such as a slider moving from 0.0 to 100.0. An Animation could also represent a value that jumps from one value to another, such as a slider that snaps from 0.0 to 100.0. The Animation object knows nothing about rendering or `build()` functions: instead, it just returns a new value whenever the client asks for it, and the client decides what to do with that value. But the Animation object is tied to the AnimationController, and it changes its value based on the AnimationController value.
 
 ## Tween
 
@@ -24,3 +24,27 @@ the child widget, such as scaling, rotating, translating, and skewing. The Trans
 ## AnimatedBuilder
 
 The `AnimatedBuilder` widget in Flutter is used to animate the properties of a child widget. The AnimatedBuilder widget provides a builder callback function that is called on every frame of the animation. The builder callback function provides the current animation value as an argument, which can be used to update the child widget.
+
+## Clippers
+
+A `Clipper` is a class that defines a custom clip region for a widget. A Clipper is used with the `CustomClipper` widget. The CustomClipper widget is used to clip the child of a widget using a custom clipper. The CustomClipper widget is used to clip the child of a widget using a custom clipper. The CustomClipper widget is used to clip the child of a widget using a custom clipper.
+
+## CustomClipper
+
+The `CustomClipper` widget in Flutter is used to clip the child of a widget using a custom clipper. The CustomClipper widget is used to clip the child of a widget using a custom clipper. The CustomClipper widget is used to clip the child of a widget using a custom clipper.
+
+## ClipPath
+
+The `ClipPath` widget in Flutter is used to clip the child of a widget using a custom path. The ClipPath widget is used to clip the child of a widget using a custom path. The ClipPath widget is used to clip the child of a widget using a custom path.
+
+## Curves
+
+A `Curve` is a class that defines a mapping from a 0.0 to 1.0 interval to a 0.0 to 1.0 interval. Curves are used by the `Animation` objects to provide a non-linear mapping of the input interval to the output interval.
+
+## Chained Animations
+
+The `AnimationController` class provides a `forward()` method to start the animation, and a `reverse()` method to reverse the animation. The `forward()` method starts the animation from the beginning, and the `reverse()` method starts the animation from the end. The `forward()` and `reverse()` methods are asynchronous, and they return a `Future` that completes when the animation completes. The `forward()` and `reverse()` methods can be called multiple times, and each time the animation starts from the beginning or the end, respectively.
+
+## TickerAnimationMixin
+
+The `TickerAnimationMixin` class is a mixin that provides a `Ticker` and an `AnimationController` to a `State` object. The `Ticker` is used to call `setState()` whenever a frame is rendered. The `AnimationController` is used to generate a `Ticker` that is used to drive the `Animation` objects.
