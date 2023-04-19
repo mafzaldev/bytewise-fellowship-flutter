@@ -12,6 +12,14 @@ The `AnimationController` is a special Animation object that generates a new val
 
 Unlike `AnimationController`, which can generate a new value whenever the hardware is ready for a new frame, `Animation` is a value that can change over time, but the value does not need to be generated on every frame. For example, an Animation could represent a value that smoothly changes over time, such as a slider moving from 0.0 to 100.0. An Animation could also represent a value that jumps from one value to another, such as a slider that snaps from 0.0 to 100.0. The Animation object knows nothing about rendering or `build()` functions: instead, it just returns a new value whenever the client asks for it, and the client decides what to do with that value. But the Animation object is tied to the AnimationController, and it changes its value based on the AnimationController value.
 
+## Explicit Animations
+
+Explicit animations are animations that are programmed using the `AnimationController` class. Explicit animations are useful when you want to have full control over the animation. For example, you can use the `addListener()` method to trigger an animation every time the animation value changes. You can also use the `addStatusListener()` method to trigger an animation when the animation status changes, such as when the animation starts, stops, or reverses direction.
+
+## Implicit Animations
+
+Implicit animations are animations that are already programmed into a widget, such as the animations that are triggered when you use a `Material` widget. Implicit animations are useful when you want to quickly add an animation to your app without having to write a lot of animation code. For example, you can use the `AnimatedOpacity` widget to animate the opacity of a widget without having to write any animation code.
+
 ## Tween
 
 A `Tween` is an object that maps a range of input values to a range of output values. A Tween takes two double values, a begin and an end, and a method that maps a double from the input range to a double in the output range. A Tween is stateless and does not store any data.
@@ -56,3 +64,11 @@ Currently, Flutter does not support 3D animations. However, you can use the `Tra
 ## Stack
 
 The `Stack` widget in Flutter is used to position the children of a widget in a stack. The Stack widget is used to position the children of a widget in a stack. The Stack widget is used to position the children of a widget in a stack. Stack works in FIFO order, which means that the last child added to the stack is the first child to be displayed.
+
+## Hero
+
+The `Hero` widget in Flutter is used to animate the transition between two widgets with the same tag. The Hero widget is used to animate the transition between two widgets with the same tag. Hero provides us an option named as `flightShuttleBuilder` which is used to customize the transition between two widgets. The `flightShuttleBuilder` is called when the Hero widget is transitioning from one route to another.
+
+## AnimatedContainer
+
+The `AnimatedContainer` widget in Flutter is used to animate the properties of a container. The animated container is useful when you want to animate the properties of a container without having to write a lot of animation code. The `AnimatedContainer` provides a duration property that is used to specify the duration of the animation. The `AnimatedContainer` also provides a curve property that is used to specify the curve of the animation.
