@@ -48,3 +48,11 @@ The `AnimationController` class provides a `forward()` method to start the anima
 ## TickerAnimationMixin
 
 The `TickerAnimationMixin` class is a mixin that provides a `Ticker` and an `AnimationController` to a `State` object. The `Ticker` is used to call `setState()` whenever a frame is rendered. The `AnimationController` is used to generate a `Ticker` that is used to drive the `Animation` objects.
+
+## 3D Animations in Flutter
+
+Currently, Flutter does not support 3D animations. However, you can use the `Transform` widget to create a 3D effect. The `Transform` widget allows you to apply various transformations to its child widget. The `Transform` widget provides different methods to transform the child widget, such as scaling, rotating, translating, and skewing. The `Transform` widget is useful when you want to apply some transformation to a widget without changing its layout constraints.
+
+## Stack
+
+The `Stack` widget in Flutter is used to position the children of a widget in a stack. The Stack widget is used to position the children of a widget in a stack. The Stack widget is used to position the children of a widget in a stack. Stack works in FIFO order, which means that the last child added to the stack is the first child to be displayed.
