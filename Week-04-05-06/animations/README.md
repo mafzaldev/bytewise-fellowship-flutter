@@ -72,3 +72,12 @@ The `Hero` widget in Flutter is used to animate the transition between two widge
 ## AnimatedContainer
 
 The `AnimatedContainer` widget in Flutter is used to animate the properties of a container. The animated container is useful when you want to animate the properties of a container without having to write a lot of animation code. The `AnimatedContainer` provides a duration property that is used to specify the duration of the animation. The `AnimatedContainer` also provides a curve property that is used to specify the curve of the animation.
+
+## TweenAnimationBuilder
+
+The `TweenAnimationBuilder` widget in Flutter is used to animate a property of a widget using a `Tween`. The `TweenAnimationBuilder` widget is used for `Implicit Animations`, which means that the animation is already programmed into the widget. This widget provides us the following options:
+
+- `tween`: The `Tween` object that is used to animate the property of the widget.
+- `duration`: The duration of the animation.
+- `onEnd`: The callback function that is called when the animation completes.
+- `builder`: The builder callback function that is called on every frame of the animation. The builder callback function provides the current animation value as an argument, which can be used to update the property of the widget.
