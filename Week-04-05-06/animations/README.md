@@ -53,9 +53,13 @@ A `Curve` is a class that defines a mapping from a 0.0 to 1.0 interval to a 0.0 
 
 The `AnimationController` class provides a `forward()` method to start the animation, and a `reverse()` method to reverse the animation. The `forward()` method starts the animation from the beginning, and the `reverse()` method starts the animation from the end. The `forward()` and `reverse()` methods are asynchronous, and they return a `Future` that completes when the animation completes. The `forward()` and `reverse()` methods can be called multiple times, and each time the animation starts from the beginning or the end, respectively.
 
+## SingleTickerProviderStateMixin
+
+The `SingleTickerProviderStateMixin` class is a mixin that provides a `TickerProvider` to a State object. The TickerProvider is used to create a Ticker that is used to drive the Animation objects. This mixin is used by widgets that create a single AnimationController.
+
 ## TickerAnimationMixin
 
-The `TickerAnimationMixin` class is a mixin that provides a `Ticker` and an `AnimationController` to a `State` object. The `Ticker` is used to call `setState()` whenever a frame is rendered. The `AnimationController` is used to generate a `Ticker` that is used to drive the `Animation` objects.
+The `TickerAnimationMixin` class is a mixin that provides a `Ticker` and an `AnimationController` to a State object. The Ticker is used to call `setState()` whenever a frame is rendered. The AnimationController is used to generate a Ticker that is used to drive the Animation objects.
 
 ## 3D Animations in Flutter
 
@@ -81,3 +85,7 @@ The `TweenAnimationBuilder` widget in Flutter is used to animate a property of a
 - `duration`: The duration of the animation.
 - `onEnd`: The callback function that is called when the animation completes.
 - `builder`: The builder callback function that is called on every frame of the animation. The builder callback function provides the current animation value as an argument, which can be used to update the property of the widget.
+
+## CustomPainter
+
+The `CustomPainter` widget is used to create custom graphics and animations by painting on a canvas. The CustomPainter widget provides a `paint()` method that is called to paint on the canvas. The `paint()` method provides a Canvas object that can be used to draw various shapes, lines, and text.
