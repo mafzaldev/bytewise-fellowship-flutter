@@ -2,6 +2,10 @@
 
 `Performance` refers to the speed and efficiency of an application. A high-performance application is one that is fast, responsive, and efficient. It is able to handle a large number of requests and transactions without slowing down or crashing. A high-performance application also provides a seamless user experience, as it iPerformance Metrics in Flutter
 
+## Deferred Components
+
+`Deferred Components` are components that are not loaded until they are needed. Flutter can build apps that download additional Dart code and assets at runtime, reducing install apk size and downloading features and assets as needed. These downloadable bundles are referred to as deferred components and are achieved through Dart's deferred imports compiled into split AOT shared libraries. Flutter's deferred components feature is only available on Android, utilizing dynamic feature modules in the Google Play Store to deliver the components as Android modules. Deferred code does not affect other platforms.
+
 ## Performance Metrics in Flutter
 
 Before we dive into performance optimization techniques, let's first understand the key performance metrics that Flutter measures.

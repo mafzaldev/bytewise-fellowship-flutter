@@ -1,6 +1,6 @@
 # Introduction to widgets
 
-An example of flutter app with basic widgets and lifecycle methods are shown [here](./widgets_example_app).
+A Flutter app with examples of basic widgets and lifecycle methods are shown [here](./widgets_example_app).
 
 Flutter's framework is modern and draws inspiration from React, with the core concept being the construction of UI using widgets. Widgets define the appearance of the view based on their present settings and state. When a widget's state alters, it recreates its definition, and the framework compares it with the previous one to determine the smallest changes required in the render tree to switch between states.
 

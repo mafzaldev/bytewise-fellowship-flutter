@@ -1,5 +1,9 @@
 # Animations
 
+A Flutter app with some cool custom animation examples are shown [here](./flutter_animation_examples).
+
+`Animation` is a core concept in Flutter. It is used to animate the properties of a widget. The Animation class is an abstract class that contains listeners and status listeners. The Animation class is an abstract class that contains listeners and status listeners. The Animation class is an abstract class that contains listeners and status listeners.
+
 ## Flipped Canvas in flutter
 
 In Flutter, the canvas is flipped horizontally, so the origin is in the top left corner, and the positive y-axis points down. This is different from the standard Cartesian coordinate system, where the origin is in the bottom left corner, and the positive y-axis points up. This means that the y-axis is flipped when drawing on the canvas.

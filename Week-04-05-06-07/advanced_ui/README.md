@@ -1,6 +1,6 @@
 # Advanced UI
 
-A flutter app with advanced UI examples are shown [here](./advanced_ui_examples).
+A Flutter app with advanced UI examples are shown [here](./advanced_ui_examples).
 
 ## Actions and Shortcuts
 
