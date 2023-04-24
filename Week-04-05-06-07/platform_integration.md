@@ -1,4 +1,4 @@
-# Platform Integration
+# Platform Integration in Flutter
 
 `Platform Integration` refers to the process of integrating a mobile app with its underlying operating system, which could be either Android or iOS. This integration allows the app to access and leverage the features and functionalities provided by the underlying operating system. Some examples of platform integrations include accessing the device camera, sensors, storage, and network connectivity.
 
