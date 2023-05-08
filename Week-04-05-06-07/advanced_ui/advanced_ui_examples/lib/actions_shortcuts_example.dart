@@ -59,7 +59,12 @@ class _CopyableTextFieldState extends State<CopyableTextField> {
               children: <Widget>[
                 const Spacer(),
                 Expanded(
-                  child: TextField(controller: controller),
+                  child: TextField(
+                    controller: controller,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
                 ),
                 IconButton(
                   icon: const Icon(Icons.copy),

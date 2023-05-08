@@ -24,12 +24,16 @@ class _CallbackShortcutsExampleState extends State<CallbackShortcutsExample> {
       },
       child: Focus(
         autofocus: true,
-        child: Column(
-          children: <Widget>[
-            const Text('Press the up arrow key to add to the counter'),
-            const Text('Press the down arrow key to subtract from the counter'),
-            Text('count: $count'),
-          ],
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              const Text('Press the up arrow key to add to the counter'),
+              const Text(
+                  'Press the down arrow key to subtract from the counter'),
+              Text('count: $count'),
+            ],
+          ),
         ),
       ),
     );

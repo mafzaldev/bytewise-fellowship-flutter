@@ -1,5 +1,4 @@
 import 'package:advanced_ui_examples/focus_traversal_widget_example.dart';
-import 'package:advanced_ui_examples/focus_widget_example.dart';
 import 'package:flutter/material.dart';
 
 void main() {
