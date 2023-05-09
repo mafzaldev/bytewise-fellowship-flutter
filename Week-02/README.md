@@ -1,4 +1,4 @@
-# Week 02 (REST API and State Management)
+# Week 02 (REST API, State Management and MVVM)
 
 In this week, I learnt about how REST API works and how can I manage my application state using Provider.
 
@@ -65,7 +65,7 @@ I designed 4 different screens for the app, as follows:
 
 ---
 
-## State Management (Provider and MVVM)
+## State Management
 
 In this section, firstly I revisited the state management concepts, like:
 
@@ -96,3 +96,11 @@ I implemented different examples to understand the Provider concepts, like:
 - `Light/Dark mode Example`: I implemented a simple light/dark mode example, where user is provided with three Radio Buttons to change the theme(Light/Dark/System) of the app. I used the Provider to manage the state of the theme. I used the ChangeNotifierProvider widget to provide the state to the application.
 
 - `REST API Example`: I implemented a simple REST API example, where I used the Provider to manage the login request to the REST API. I used the ChangeNotifierProvider widget to provide the state to the application.
+
+## MVVM
+
+In this section, I learnt about the MVVM architecture. MVVM stands for Model-View-ViewModel. In this architecture, the business logic is separated from the UI. The business logic is written in the ViewModel, which is then consumed by the View. The View is the UI of the application, which is built using the Model. The Model is the data model of the application, which is used to store the data of the application.
+
+### Why do we need MVVM?
+
+MVVM is used to build scalable and maintainable applications. It is used to separate the business logic from the UI. It is used to make the code more readable and understandable. It is used to make the code more reusable. It is used to make the code more testable.

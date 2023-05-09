@@ -8,11 +8,13 @@ The Flutter Fellowship at ByteWise is a comprehensive program designed to provid
 
 ### Contents
 
-1. [Onboarding](./Week-01/)
-2. [REST API and State Management](./Week-02/)
-3. [Firebase](./Week-03/)
-4. [Animations](./Week-04-05-06-07/animations/README.md)
-5. [Advanced UI](./Week-04-05-06-07/advanced_ui/README.md)
-6. [Platform Integration](./Week-04-05-06-07/platform_integration.md)
-7. [Performance](./Week-04-05-06-07/performance.md)
-8. [Introduction to widgets](./Week-04-05-06-07/introduction_to_widgets/README.md)
+1. [Onboarding](./Week-01/README.md)
+2. [REST API](./Week-02/README.md#rest-api)
+3. [State Management](./Week-02/README.md#state-management)
+4. [MVVM](./Week-02/README.md#mvvm)
+5. [Firebase](./Week-03/README.md)
+6. [Animations](./Week-04-05-06-07/animations/README.md)
+7. [Advanced UI](./Week-04-05-06-07/advanced_ui/README.md)
+8. [Platform Integration](./Week-04-05-06-07/platform_integration.md)
+9. [Performance](./Week-04-05-06-07/performance.md)
+10. [Introduction to widgets](./Week-04-05-06-07/introduction_to_widgets/README.md)
