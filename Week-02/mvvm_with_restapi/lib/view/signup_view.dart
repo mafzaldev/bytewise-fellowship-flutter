@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_with_restapi/utils/routes/routes_name.dart';
 import 'package:provider/provider.dart';
 
 import 'package:mvvm_with_restapi/res/components/rounded_button.dart';
 import 'package:mvvm_with_restapi/utils/utils.dart';
 import 'package:mvvm_with_restapi/view_model/auth_view_model.dart';
 
-class LoginView extends StatefulWidget {
-  const LoginView({super.key});
+class SignUpView extends StatefulWidget {
+  const SignUpView({super.key});
 
   @override
-  State<LoginView> createState() => _LoginViewState();
+  State<SignUpView> createState() => _SignUpViewState();
 }
 
-class _LoginViewState extends State<LoginView> {
+class _SignUpViewState extends State<SignUpView> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final FocusNode _emailFocusNode = FocusNode();
@@ -36,7 +35,7 @@ class _LoginViewState extends State<LoginView> {
     final authViewModel = Provider.of<AuthViewModel>(context);
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: const Text("Login")),
+        appBar: AppBar(title: const Text("SignUp")),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10.0),
           child: Column(
@@ -85,7 +84,7 @@ class _LoginViewState extends State<LoginView> {
                     })),
                 const SizedBox(height: 20),
                 RoundedButton(
-                    title: "Login",
+                    title: "SignUp",
                     loading: authViewModel.isLoading,
                     onTap: () {
                       if (_emailController.text.isEmpty) {
@@ -109,15 +108,14 @@ class _LoginViewState extends State<LoginView> {
                           "email": _emailController.text.toString(),
                           "password": _passwordController.text.toString()
                         };
-                        authViewModel.login(context, data);
+                        authViewModel.signup(context, data);
                         return;
                       }
                     }),
                 const SizedBox(height: 20),
                 InkWell(
-                    onTap: () =>
-                        Navigator.pushNamed(context, RoutesName.signup),
-                    child: const Text("Don't have an account? SignUp")),
+                    onTap: () => Navigator.pop(context),
+                    child: const Text("Already have an account? Login")),
               ]),
         ),
       ),

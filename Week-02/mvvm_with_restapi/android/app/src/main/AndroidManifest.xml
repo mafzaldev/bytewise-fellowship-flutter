@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mvvm_with_restapi">
    <application
-        android:label="mvvm_with_restapi"
+        android:label="MVVM with Rest API"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
