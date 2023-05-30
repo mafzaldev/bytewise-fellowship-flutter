@@ -86,8 +86,10 @@ class _HomeViewState extends State<HomeView> {
                       ),
                     );
                   });
+
+            default:
+              return Container();
           }
-          return Container();
         }),
       ),
     );
