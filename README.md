@@ -19,3 +19,4 @@ The Flutter Fellowship at ByteWise is a comprehensive program designed to provid
 9. [Performance](./Week-04-05-06-07/performance.md)
 10. [Introduction to widgets](./Week-04-05-06-07/introduction_to_widgets/README.md)
 11. [Clone Application Project](./Week-09-10-11-12/README.md)
+12. [Final Task](./Week-13-/README.md)
