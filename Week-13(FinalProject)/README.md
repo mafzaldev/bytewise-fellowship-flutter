@@ -15,4 +15,4 @@ In these weeks, we were asked to build any Flutter based application, which shou
 - User will recieve a notification, when the progress is saved locally(at 11:30PM)
 - For reading task, user can see a list of books
 
-I stored the source code for this project in a separate repository, which can be found [here](https://github.com/mafzaldev/75-hard)
+I stored the source code for this project in a separate repository, which can be found [here](https://github.com/mafzaldev/flutter-75-hard)
