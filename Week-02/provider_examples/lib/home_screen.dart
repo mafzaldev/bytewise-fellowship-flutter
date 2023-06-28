@@ -1,11 +1,13 @@
+// ignore_for_file: must_be_immutable
+
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
+  int x = 0;
   HomeScreen({super.key});
 
-  int x = 0;
   @override
   Widget build(BuildContext context) {
     log("build");

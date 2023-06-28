@@ -2,9 +2,9 @@ import 'package:covid_tracker/Widgets/resusable_row.dart';
 import 'package:flutter/material.dart';
 
 class CountryDetails extends StatefulWidget {
-  String name, flag;
-  int cases, deaths, recovered, active, critical, population;
-  CountryDetails({
+  final String name, flag;
+  final int cases, deaths, recovered, active, critical, population;
+  const CountryDetails({
     Key? key,
     required this.name,
     required this.flag,
